@@ -20,3 +20,6 @@ execute the following command in the debian-jessie folder:
   $ sudo docker build -t mine/debian-jessie .
   $ sudo docker run --rm -it mine/debian-jessie /bin/bash
 ```
+
+The repo is available on [Docker
+hub](https://registry.hub.docker.com/u/petervandenabeele/debian-jessie/)
