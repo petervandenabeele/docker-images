@@ -17,7 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y && apt-get install -y --no-
     wget
 
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends oracle-java8-installer=8u40+8u33arm-1~webupd8~0
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends oracle-java8-installer
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get autoremove \
     && apt-get clean \
